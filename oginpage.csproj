@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="imageb\apple.png" />
+    <None Remove="imageb\fa.png" />
+    <None Remove="imageb\gmail.png" />
+    <None Remove="imageb\image1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imageb\apple.png" />
+    <Resource Include="imageb\gmail.png" />
+    <Resource Include="imageb\image1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imageb\fa.png" />
+  </ItemGroup>
+
+</Project>
